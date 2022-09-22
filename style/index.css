@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap");
+
+:root {
+  --back: #192635;
+  --black: #4b4b55;
+  --details: #fcc755;
+  --text: #f2f2f2;
+  --cy: #00bc7f;
+  --red: #f4324a;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* * Fonte * */
+
+.title {
+  color: var(--cy);
+}
+
+.title-detail {
+  color: var(--text);
+}
+
+.subtitle {
+  margin-bottom: 0.2em;
+  letter-spacing: 3px;
+  font-size: 2em;
+}
+
+.description {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+a p {
+  color: var(--details);
+  margin: 1.5em 0;
+  cursor: pointer;
+  font-size: 1.1em;
+
+  -webkit-transition: 0.5s ease-in;
+  -moz-transition: 0.5s ease-in;
+  -o-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+}
+
+a p:hover {
+  color: var(--details);
+  margin: 1.5em 0;
+  cursor: pointer;
+  letter-spacing: 2px;
+
+  -webkit-transition: 0.5s ease-out;
+  -moz-transition: 0.5s ease-out;
+  -o-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
+}
+
+.us a{
+    color: var(--cy);
+    font-size: 1.2em;
+}
+
+#luckNumber {
+  font-size: 2.5em;
+  letter-spacing: 15px;
+  margin: 2em 0;
+}
+
+body {
+  background-color: var(--back);
+  color: var(--text);
+  font-family: "Montserrat", sans-serif;
+}
+
+.full-size {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.size {
+  width: 90%;
+  max-width: 1080px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  width: 100%;
+  height: 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--black);
+}
+
+main {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  margin: 4em 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+button {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.7s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  button:hover {
+    background-color: #00BC7F;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-5px);
+  }
+  
+  button:active {
+    transform: translateY(-1px);
+  }
+
+  footer{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--black);
+  }
+  
+  .info{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  .us{
+      text-align: center;
+      line-height: 1.5;
+  }
+
+  input{
+    width: 200px;
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    /* background-color: #f2f2f2af; */
+    background: inherit;
+    margin: 3em 0 1em 0;
+    color: var(--text);
+  }
+
+  #answer{
+    width: 100%;
+    height: 50px;
+  }
+
+  .correct{
+    
+    color: var(--cy);
+  }
+
+  .wrong{
+    
+    color: var(--red);
+  }
+
+@media(min-width: 720px){
+    footer{
+        width: 100%;
+        height: 110px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--black);
+      }
+      
+      .info{
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+      }
+      
+      .us{
+          text-align: center;
+          line-height: 1.5;
+      }
+}
+
+.senha{
+    max-width: 130px;
+    height: auto;
+    border: none;
+    text-decoration:  none;
+    outline: none;
+    letter-spacing: 7px;
+    border-bottom: solid 2px #00BC7F;
+    text-align: center;
+    padding-left: 7px;
+    font-size: 20px;
+   }
+   .senha::placeholder{
+    color: rgba(255, 255, 255, 0.445);
+}
+   
