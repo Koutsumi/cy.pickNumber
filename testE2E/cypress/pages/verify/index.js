@@ -6,22 +6,22 @@ class verifyPage {
         cy.contains(el.title.selector, el.title.text)
             .should('be.visible')
     }
+    
+    typeNumber(){
 
-    typeNumber(status){
+        cy.get(el.input)
+            .clear()
+                .type(Cypress.env('myNumber'))
+        
+    }
 
-        if(status === 'correct'){
-            cy.get(el.input)
-                .clear()
-                    .type(Cypress.env('myNumber'))
-        }
-        else if(status === 'wrong'){
-            let randomNumber = Math.random() * (9999 - 1000) + 1000
+    typeWrongNumber(){
+        let randomNumber = Math.random() * (9999 - 1000) + 1000
             randomNumber = randomNumber.toFixed(2)
 
             cy.get(el.input)
                 .clear()
                     .type(randomNumber)
-        }       
     }
 
     submit(){
