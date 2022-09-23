@@ -25,7 +25,7 @@ describe('Verificando o número gerado pelo sistema', function() {
             indexPage.goVerifyPage()
 
             verifyPage.title()
-            verifyPage.typeNumber('correct')
+            verifyPage.typeNumber()
             verifyPage.submit()
             const expectedMessage = 'Parabéns! O número está correto ;)'
             verifyPage.checkResponse(expectedMessage)
@@ -36,7 +36,7 @@ describe('Verificando o número gerado pelo sistema', function() {
             indexPage.goVerifyPage()
 
             verifyPage.title()
-            verifyPage.typeNumber('wrong')
+            verifyPage.typeWrongNumber()
             verifyPage.submit()
             const expectedMessage = 'Oh não! O número está errado ):'
             verifyPage.checkResponse(expectedMessage)
